@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import omar.springframework.msscbrewery.web.model.v2.BeerStyleEnum;
 
 
+import java.sql.Timestamp;
 import java.util.UUID;
 
 @Data
@@ -19,4 +20,6 @@ public class Beer {
     private String beerName;
     private BeerStyleEnum beerStyle;
     private Long upc;
+    private Timestamp createdDate;
+    private Timestamp lastUpdatedDate;
 }
